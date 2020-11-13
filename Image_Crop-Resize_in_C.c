@@ -24,23 +24,6 @@ int writeHeader(header *ptr, FILE *outFile)
 int getHeader(header *ptr, FILE *imageFile)
 {
     fread(&ptr->head,sizeof(unsigned char)*54,1,imageFile);
-    
-    // char fourBit[4];
-    // fread(fourBit, sizeof(char) * 4, 1, imageFile);
-    // strcpy(ptr->ImageType, fourBit);
-    // // printf("%s\n", ptr->ImageType);
-    // fseek(imageFile, 4, SEEK_SET);
-    // fread(&ptr->bands, sizeof(uint8_t), 1, imageFile);
-    // // printf("%d\n", ptr->bands);
-    // fseek(imageFile, 5, SEEK_SET);
-    // fread(&ptr->rows, sizeof(int), 1, imageFile);
-    // // printf("%d\n", ptr->rows);
-    // fseek(imageFile, 9, SEEK_SET);
-    // fread(&ptr->columns, sizeof(int), 1, imageFile);
-    // // printf("%d\n", ptr->columns);
-    // fseek(imageFile, 13, SEEK_SET);
-    // fread(&ptr->numberOfBits, sizeof(uint8_t), 1, imageFile);
-    // printf("%d\n", ptr->numberOfBits);
     return 1;
 }
 
